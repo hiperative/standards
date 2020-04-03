@@ -1,0 +1,27 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "Docs, config files, and more outlining how Hiperative Development Foundation builds JavaScript products.",
+  "private": true,
+  "repository": "git@github.com:hiperative/product-conventions.git",
+  "author": "Rafaell Lycan",
+  "license": "Apache-2.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": ["prettier --write"],
+    "**/*.md": ["prettier --write"]
+  },
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lerna": "^3.20.2",
+    "lint-staged": "^10.1.1",
+    "prettier": "^2.0.2"
+  }
+}

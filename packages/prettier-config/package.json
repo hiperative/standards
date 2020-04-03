@@ -10,9 +10,6 @@
     "url": "git+https://github.com/hiperative/product-conventions.git"
   },
   "main": "index.js",
-  "devDependencies": {
-    "prettier": "*"
-  },
   "peerDependencies": {
     "prettier": "1.x"
   },

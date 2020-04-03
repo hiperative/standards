@@ -5,7 +5,7 @@ Hiperative's base Prettier config.
 ## Installation
 
 ```sh
-yarn add --dev @hiperative/prettier-config
+yarn add --dev @hiperative/prettier-config prettier
 ```
 
 ## Usage

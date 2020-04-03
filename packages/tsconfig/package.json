@@ -1,0 +1,22 @@
+{
+  "name": "@hiperative/tsconfig",
+  "version": "1.0.0",
+  "description": "Hiperative's default tsconfigs'",
+  "author": "Rafaell Lycan",
+  "homepage": "https://github.com/hiperative/product-conventions#readme",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiperative/product-conventions.git"
+  },
+  "main": "tsconfig.json",
+  "peerDependencies": {
+    "typescript": ">=3.2 <4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=10.18.0"
+  }
+}

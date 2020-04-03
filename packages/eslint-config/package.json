@@ -1,0 +1,26 @@
+{
+  "name": "@hiperative/eslint-config",
+  "version": "1.0.0",
+  "description": "Hiperative's default ESLint config",
+  "author": "Rafaell Lycan",
+  "homepage": "https://github.com/hiperative/product-conventions#readme",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiperative/product-conventions.git"
+  },
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": "*"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "*",
+    "eslint-plugin-promise": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=10.18.0"
+  }
+}

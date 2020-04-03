@@ -6,6 +6,7 @@
   "repository": "git@github.com:hiperative/product-conventions.git",
   "author": "Rafaell Lycan",
   "license": "Apache-2.0",
+  "prettier": "@hiperative/prettier-config",
   "workspaces": [
     "packages/*"
   ],
@@ -19,6 +20,7 @@
     "**/*.md": ["prettier --write"]
   },
   "devDependencies": {
+    "@hiperative/prettier-config": "^1.0.0",
     "husky": "^4.2.3",
     "lerna": "^3.20.2",
     "lint-staged": "^10.1.1",

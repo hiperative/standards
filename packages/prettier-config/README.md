@@ -22,11 +22,12 @@ in package.json:
 }
 ```
 
-If you need to extend or change the config, you can update your project's `prettier.config.js` file to import the rule sets you want:
+If you need to extend or change the config, you can update your project's
+`prettier.config.js` file to import the rule sets you want:
 
 ```js
 module.exports = {
-  ...require("@hiperative/prettier-config"),
+  ...require('@hiperative/prettier-config'),
   // your overrides here
 };
 ```

@@ -12,14 +12,39 @@
   ],
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "**/*.js": ["prettier --write"],
-    "**/*.md": ["prettier --write"]
+    "*.js": [
+      "eslint --fix"
+    ],
+    "**/**/**/*.+(js|json|jsx|ts|tsx|mdx|md)": [
+      "prettier --write",
+      "git add "
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "subject-case": [
+        2,
+        "never",
+        [
+          "start-case",
+          "lower-case",
+          "pascal-case",
+          "upper-case"
+        ]
+      ]
+    }
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@hiperative/prettier-config": "^1.0.0",
     "husky": "^4.2.3",
     "lerna": "^3.20.2",

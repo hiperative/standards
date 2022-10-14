@@ -1,9 +1,8 @@
 {
-  "name": "standards",
+  "name": "@hiperative/standards",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "apps/*",
     "packages/*"
   ],
   "scripts": {
@@ -13,13 +12,14 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "eslint-config-custom": "workspace:*",
+    "@hiperative/eslint-config": "workspace:*",
+    "@hiperative/prettier-config": "workspace:*",
     "prettier": "latest",
     "turbo": "latest"
   },
+  "prettier": "@hiperative/prettier-config",
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=14.17.0"
   },
-  "dependencies": {},
   "packageManager": "pnpm@7.13.4"
 }

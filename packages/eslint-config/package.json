@@ -1,0 +1,31 @@
+{
+  "name": "@hiperative/eslint-config",
+  "version": "0.0.0",
+  "description": "Hiperative's default ESLint config",
+  "author": "Rafaell Lycan",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "files": [
+    "base.js",
+    "index.js",
+    "typescript.js"
+  ],
+  "peerDependencies": {
+    "eslint": "^8.10.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-config-prettier": "^8.5.0"
+  },
+  "devDependencies": {
+    "@hiperative/prettier-config": "workspace:*",
+    "eslint": "^8.10.0",
+    "typescript": "^4.7.4"
+  },
+  "prettier": "@hiperative/prettier-config",
+  "engines": {
+    "node": ">=14.17.0"
+  }
+}

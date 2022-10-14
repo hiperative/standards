@@ -1,0 +1,14 @@
+{
+  "name": "@hiperative/prettier-config",
+  "version": "1.0.0",
+  "description": "Hiperative's default Prettier config",
+  "author": "Rafaell Lycan",
+  "license": "Apache-2.0",
+  "main": "prettier.config.js",
+  "peerDependencies": {
+    "prettier": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=14.17.0"
+  }
+}

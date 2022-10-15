@@ -9,11 +9,13 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
+    "check": "prettier --check \"**/*.{ts,tsx,md}\"",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "@hiperative/eslint-config": "workspace:*",
     "@hiperative/prettier-config": "workspace:*",
+    "eslint": "latest",
     "prettier": "latest",
     "turbo": "latest"
   },

@@ -6,17 +6,18 @@ importers:
     specifiers:
       '@hiperative/eslint-config': workspace:*
       '@hiperative/prettier-config': workspace:*
+      eslint: latest
       prettier: latest
       turbo: latest
     devDependencies:
       '@hiperative/eslint-config': link:packages/eslint-config
       '@hiperative/prettier-config': link:packages/prettier-config
+      eslint: 8.25.0
       prettier: 2.7.1
       turbo: 1.5.6
 
   packages/eslint-config:
     specifiers:
-      '@hiperative/prettier-config': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.40.0
       '@typescript-eslint/parser': ^5.40.0
       eslint: ^8.10.0
@@ -31,12 +32,14 @@ importers:
       eslint-plugin-import: 2.26.0_zb5prbqp7qzcgafjm73dfpyyvm
       eslint-plugin-promise: 6.1.0_eslint@8.25.0
     devDependencies:
-      '@hiperative/prettier-config': link:../prettier-config
       eslint: 8.25.0
       typescript: 4.8.4
 
   packages/prettier-config:
-    specifiers: {}
+    specifiers:
+      prettier: ^2.0.0
+    devDependencies:
+      prettier: 2.7.1
 
 packages:
 

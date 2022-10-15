@@ -22,12 +22,14 @@ importers:
       eslint: ^8.10.0
       eslint-config-prettier: ^8.5.0
       eslint-plugin-import: ^2.26.0
+      eslint-plugin-promise: ^6.1.0
       typescript: ^4.7.4
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.40.0_25sstg4uu2sk4pm7xcyzuov7xq
       '@typescript-eslint/parser': 5.40.0_z4bbprzjrhnsfa24uvmcbu7f5q
       eslint-config-prettier: 8.5.0_eslint@8.25.0
       eslint-plugin-import: 2.26.0_zb5prbqp7qzcgafjm73dfpyyvm
+      eslint-plugin-promise: 6.1.0_eslint@8.25.0
     devDependencies:
       '@hiperative/prettier-config': link:../prettier-config
       eslint: 8.25.0
@@ -523,6 +525,15 @@ packages:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
+    dev: false
+
+  /eslint-plugin-promise/6.1.0_eslint@8.25.0:
+    resolution: {integrity: sha512-NYCfDZF/KHt27p06nFAttgWuFyIDSUMnNaJBIY1FY9GpBFhdT2vMG64HlFguSgcJeyM5by6Yr5csSOuJm60eXQ==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^7.0.0 || ^8.0.0
+    dependencies:
+      eslint: 8.25.0
     dev: false
 
   /eslint-scope/5.1.1:

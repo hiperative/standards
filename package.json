@@ -7,8 +7,8 @@
   ],
   "scripts": {
     "lint": "eslint --ext .js,.ts --max-warnings 0 .",
-    "check": "prettier --check \"**/*.{js,ts,md}\"",
-    "format": "prettier --write \"**/*.{js,ts,md}\""
+    "check": "prettier --check \"**/*.{js,ts,md,yml,json}\"",
+    "format": "prettier --write \"**/*.{js,ts,md,yml,json}\""
   },
   "devDependencies": {
     "@hiperative/eslint-config": "workspace:*",

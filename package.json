@@ -6,11 +6,9 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "check": "prettier --check \"**/*.{ts,tsx,md}\"",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "lint": "eslint --ext .js,.ts --max-warnings 0 .",
+    "check": "prettier --check \"**/*.{js,ts,md}\"",
+    "format": "prettier --write \"**/*.{js,ts,md}\""
   },
   "devDependencies": {
     "@hiperative/eslint-config": "workspace:*",

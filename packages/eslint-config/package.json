@@ -1,6 +1,6 @@
 {
   "name": "@hiperative/eslint-config",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Hiperative's default ESLint config",
   "author": "Rafaell Lycan",
   "license": "Apache-2.0",

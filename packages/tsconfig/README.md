@@ -26,6 +26,9 @@ After installing, update your project's `tsconfig.json` file with it:
 }
 ```
 
+_You can also extend from `@hiperative/tsconfig/recommended` with has a more
+strict configuration._
+
 Note that you'll have to provide a significant amount of project-specific
 configuration options, including the `outDir` and `include` files.
 

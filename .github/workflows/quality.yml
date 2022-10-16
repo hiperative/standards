@@ -1,0 +1,37 @@
+name: Quality
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  test:
+    name: Code quality analysis
+    timeout-minutes: 2
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          cache: 'pnpm'
+          node-version-file: '.nvmrc'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: lint & check code standards
+        run: pnpm ci

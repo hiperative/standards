@@ -81,6 +81,15 @@ module.exports = {
       },
     ],
 
+    'no-use-before-define': [
+      'warn',
+      {
+        functions: false,
+        classes: false,
+        variables: false,
+      },
+    ],
+
     // disallow unnecessary constructor
     // https://eslint.org/docs/rules/no-useless-constructor
     'no-useless-constructor': 'error',

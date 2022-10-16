@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "scripts": {
+    "prepare": "husky install",
     "lint": "eslint --ext .js,.ts --max-warnings 0 .",
     "check": "prettier --check \"**/*.{js,ts,md,yml,json}\"",
     "format": "prettier --write \"**/*.{js,ts,md,yml,json}\""
@@ -14,10 +15,20 @@
     "@hiperative/eslint-config": "workspace:*",
     "@hiperative/prettier-config": "workspace:*",
     "eslint": "latest",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.0",
     "prettier": "latest",
     "turbo": "latest"
   },
   "prettier": "@hiperative/prettier-config",
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx}": [
+      "prettier --write"
+    ],
+    "**/*.{md,mdx,yml,json}": [
+      "prettier --write"
+    ]
+  },
   "engines": {
     "node": ">=14.17.0"
   },

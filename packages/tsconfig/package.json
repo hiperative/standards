@@ -9,5 +9,9 @@
     "base.json",
     "recommended.json",
     "tsconfig.json"
-  ]
+  ],
+  "repository": "git@github.com:hiperative/standards.git",
+  "publishConfig": {
+    "access": "public"
+  }
 }

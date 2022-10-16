@@ -9,9 +9,13 @@
     "prepare": "husky install",
     "lint": "eslint --ext .js,.ts --max-warnings 0 .",
     "check": "prettier --check \"**/*.{js,ts,md,yml,json}\"",
-    "format": "prettier --write \"**/*.{js,ts,md,yml,json}\""
+    "format": "prettier --write \"**/*.{js,ts,md,yml,json}\"",
+    "ci": "pnpm lint && pnpm check",
+    "ci:version": "changeset version && pnpm install --no-frozen-lockfile",
+    "ci:release": "pnpm ci && changeset publish --access public"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.25.0",
     "@hiperative/eslint-config": "workspace:*",
     "@hiperative/prettier-config": "workspace:*",
     "eslint": "latest",
@@ -22,10 +26,7 @@
   },
   "prettier": "@hiperative/prettier-config",
   "lint-staged": {
-    "**/*.{ts,tsx,js,jsx}": [
-      "prettier --write"
-    ],
-    "**/*.{md,mdx,yml,json}": [
+    "*": [
       "prettier --write"
     ]
   },

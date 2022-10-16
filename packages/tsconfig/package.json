@@ -1,0 +1,13 @@
+{
+  "name": "@hiperative/tsconfig",
+  "description": "Hiperative's default tsconfigs",
+  "version": "1.0.0",
+  "author": "Rafaell Lycan",
+  "license": "Apache-2.0",
+  "main": "tsconfig.json",
+  "files": [
+    "base.json",
+    "recommended.json",
+    "tsconfig.json"
+  ]
+}

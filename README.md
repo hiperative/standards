@@ -1,83 +1,34 @@
-# Turborepo starter
+# JavaScript/TypeScript Standards
 
-This is an official pnpm starter turborepo.
+A monorepo of all configs and CLI wrappers used to speed up development at
+Hiperative's apps.
+
+## Hiperative packages and shared configurations
+
+The other projects in this repo are shared configurations for common tools we
+use for building, linting, and formatting our code. They can be installed
+separately and used by anyone should they opt to follow our standards.
+
+- [@hiperative/eslint-config](./packages/eslint-config)
+- [@hiperative/prettier-config](./packages/prettier-config)
+- [@hiperative/tsconfig](./packages/tsconfig)
 
 ## What's inside?
 
-This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes
-the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs`
-  applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next`
-  and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+This repository uses [turborepo](https://turborepo.org/) and
+[pnpm](https://pnpm.io) as a package manager.
 
 ### Utilities
 
-This turborepo has some additional tools already setup for you:
+Some additional tools we use:
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm run build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm run dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as
-[Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching) to
-share cache artifacts across machines, enabling you to share build caches with
-your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need
-an account with Vercel. If you don't have an account you can
-[create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-pnpm dlx turbo login
-```
-
-This will authenticate the Turborepo CLI with your
-[Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following
-command from the root of your turborepo:
-
-```
-pnpm dlx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
-- [Caching](https://turborepo.org/docs/core-concepts/caching)
-- [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+- [TypeScript](https://www.typescriptlang.org/): a superset of JavaScript which
+  we think helps make code readable and less bug-prone.
+- [ESLint](https://eslint.org/): used for static code analysis with some
+  auto-fixing.
+- [Prettier](https://prettier.io/): use to format code pre-commit and
+  automatically in your editor.
+- [husky](https://github.com/typicode/husky): allows us to hook into git events
+  in a convenient way.
+- [lint-staged](https://github.com/okonet/lint-staged): allows us to write
+  pre-commit hooks which target specific paths and run a series of commands.

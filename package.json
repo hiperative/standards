@@ -12,7 +12,7 @@
     "format": "prettier --write \"**/*.{js,ts,md,yml,json}\"",
     "ci": "pnpm lint && pnpm check",
     "ci:version": "changeset version && pnpm install --no-frozen-lockfile",
-    "ci:release": "pnpm ci && changeset publish --access public"
+    "ci:release": "pnpm run ci && changeset publish --access public"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",

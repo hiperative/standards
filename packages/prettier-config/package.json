@@ -5,6 +5,11 @@
   "author": "Rafaell Lycan",
   "license": "Apache-2.0",
   "main": "prettier.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiperative/standards.git",
+    "directory": "packages/prettier-config"
+  },
   "peerDependencies": {
     "prettier": "^2.0.0"
   },

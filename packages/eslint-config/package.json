@@ -5,6 +5,11 @@
   "author": "Rafaell Lycan",
   "license": "Apache-2.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiperative/standards.git",
+    "directory": "packages/eslint-config"
+  },
   "files": [
     "base.js",
     "index.js",

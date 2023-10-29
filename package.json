@@ -15,12 +15,12 @@
     "ci:release": "pnpm ci && changeset publish --access public"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.25.0",
+    "@changesets/cli": "^2.26.2",
     "@hiperative/eslint-config": "workspace:*",
     "@hiperative/prettier-config": "workspace:*",
     "eslint": "latest",
-    "husky": "^8.0.0",
-    "lint-staged": "^13.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
     "prettier": "latest",
     "turbo": "latest"
   },
@@ -31,7 +31,7 @@
     ]
   },
   "engines": {
-    "node": ">=14.17.0"
+    "node": ">=16"
   },
   "packageManager": "pnpm@7.13.4"
 }
